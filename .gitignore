@@ -4,3 +4,8 @@
 /eln-cache
 /elpa
 /var
+/transient/
+/projects
+/places
+*.elc
+/history
