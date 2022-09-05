@@ -38,6 +38,9 @@
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
 	url = git@github.com:magit/magit.git
+[submodule "orderless"]
+	path = lib/orderless
+	url = git@github.com:oantolin/orderless.git
 [submodule "packed"]
 	path = lib/packed
 	url = git@github.com:emacscollective/packed.git
@@ -54,6 +57,9 @@
 [submodule "use-package"]
 	path = lib/use-package
 	url = git@github.com:jwiegley/use-package.git
+[submodule "vertico"]
+	path = lib/vertico
+	url = git@github.com:minad/vertico.git
 [submodule "with-editor"]
 	path = lib/with-editor
 	url = git@github.com:magit/with-editor.git
