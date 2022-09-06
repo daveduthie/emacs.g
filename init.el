@@ -193,6 +193,9 @@
   :init
   (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode))
 
+(set-frame-font "Source Code Pro 14" nil t)
+(load-theme 'modus-vivendi)
+
 ;;; Tequila worms
 
 (progn ;     startup
