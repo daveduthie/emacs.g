@@ -9,3 +9,4 @@
 /places
 *.elc
 /history
+/eshell/
