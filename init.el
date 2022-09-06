@@ -185,6 +185,10 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
+(use-package which-key
+  :init
+  (which-key-mode))
+
 ;;; Tequila worms
 
 (progn ;     startup
