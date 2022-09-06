@@ -193,6 +193,10 @@
   :init
   (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode))
 
+(use-package evil
+  :init
+  (evil-mode))
+
 (set-frame-font "Source Code Pro 14" nil t)
 (load-theme 'modus-vivendi)
 
