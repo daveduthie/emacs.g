@@ -197,6 +197,10 @@
   :init
   (evil-mode))
 
+(use-package paredit
+  :init
+  (paredit-mode))
+
 (set-frame-font "Source Code Pro 14" nil t)
 (load-theme 'modus-vivendi)
 
