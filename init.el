@@ -189,6 +189,10 @@
   :init
   (which-key-mode))
 
+(use-package inf-clojure
+  :init
+  (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode))
+
 ;;; Tequila worms
 
 (progn ;     startup

@@ -37,6 +37,9 @@
 [submodule "git-modes"]
 	path = lib/git-modes
 	url = git@github.com:magit/git-modes.git
+[submodule "inf-clojure"]
+	path = lib/inf-clojure
+	url = git@github.com:clojure-emacs/inf-clojure.git
 [submodule "magit"]
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
