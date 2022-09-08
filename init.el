@@ -11,7 +11,6 @@
   (message "Loading %s..." user-init-file)
   (when (< emacs-major-version 27)
     (setq package-enable-at-startup nil)
-    ;; (package-initialize)
     (load-file (expand-file-name "early-init.el" user-emacs-directory)))
   (setq inhibit-startup-buffer-menu t)
   (setq inhibit-startup-screen t)
@@ -33,8 +32,11 @@
   (require  'use-package)
   (setq use-package-verbose t))
 
-(use-package dash)
-(use-package eieio)
+(use-package dash
+  :config (global-dash-fontify-mode 1))
+
+(use-package eieio
+  :defer t)
 
 (use-package auto-compile
   :config
@@ -68,10 +70,13 @@
            (float-time (time-subtract (current-time)
                                       before-user-init-time))))
 
-;;; Long tail
+(progn ; Load personal customizations
+  (add-to-list 'load-path (expand-file-name "lib/dave" borg-user-emacs-directory))
+  (require 'dave-editing)
+  (require 'dave-org)
+  (require 'dave-ui))
 
-(use-package dash
-  :config (global-dash-fontify-mode 1))
+;;; Long tail
 
 (use-package diff-hl
   :config
@@ -117,7 +122,9 @@
   (magit-add-section-hook 'magit-status-sections-hook
                           'magit-insert-modules
                           'magit-insert-stashes
-                          'append))
+                          'append)
+  (setq magit-diff-refine-hunk t) ; show granular diffs in selected hunk
+  )
 
 (use-package man
   :defer t
@@ -172,37 +179,11 @@
   :defer t
   :config (cl-pushnew 'tramp-own-remote-path tramp-remote-path))
 
-(use-package vertico
-  :defer t
-  :init (vertico-mode))
-
-(use-package orderless
-  :init
-  ;; Configure a custom style dispatcher (see the Consult wiki)
-  ;; (setq orderless-style-dispatchers '(+orderless-dispatch)
-  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
-  (setq completion-styles '(orderless basic)
-        completion-category-defaults nil
-        completion-category-overrides '((file (styles partial-completion)))))
-
 (use-package which-key
-  :init
-  (which-key-mode))
+  :init (which-key-mode))
 
 (use-package inf-clojure
-  :init
-  (add-hook 'clojure-mode-hook #'inf-clojure-minor-mode))
-
-(use-package evil
-  :init
-  (evil-mode))
-
-(use-package paredit
-  :init
-  (paredit-mode))
-
-(set-frame-font "Source Code Pro 14" nil t)
-(load-theme 'modus-vivendi)
+  :defer t)
 
 ;;; Tequila worms
 
@@ -217,12 +198,6 @@
                (float-time (time-subtract (current-time)
                                           before-user-init-time))))
             t))
-
-(progn ;     personalize
-  (let ((file (expand-file-name (concat (user-real-login-name) ".el")
-                                user-emacs-directory)))
-    (when (file-exists-p file)
-      (load file))))
 
 ;; Local Variables:
 ;; indent-tabs-mode: nil

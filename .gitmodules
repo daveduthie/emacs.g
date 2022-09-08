@@ -7,15 +7,24 @@
 [submodule "borg"]
 	path = lib/borg
 	url = git@github.com:emacscollective/borg.git
+[submodule "browse-at-remote"]
+	path = lib/browse-at-remote
+	url = git@github.com:rmuslimov/browse-at-remote.git
 [submodule "clojure-mode"]
 	path = lib/clojure-mode
 	url = git@github.com:clojure-emacs/clojure-mode.git
 [submodule "closql"]
 	path = lib/closql
 	url = git@github.com:emacscollective/closql.git
+[submodule "company"]
+	path = lib/company
+	url = git@github.com:company-mode/company-mode.git
 [submodule "compat"]
 	path = lib/compat
 	url = https://git.sr.ht/~pkal/compat
+[submodule "consult"]
+	path = lib/consult
+	url = git@github.com:minad/consult.git
 [submodule "dash"]
 	no-byte-compile = dash-functional.el
 	no-makeinfo = dash-template.texi
@@ -34,18 +43,27 @@
 [submodule "emacsql-sqlite-builtin"]
 	path = lib/emacsql-sqlite-builtin
 	url = git@github.com:emacscollective/emacsql-sqlite-builtin.git
+[submodule "envrc"]
+	path = lib/envrc
+	url = git@github.com:purcell/envrc.git
 [submodule "epkg"]
 	path = lib/epkg
 	url = git@github.com:emacscollective/epkg.git
 [submodule "evil"]
 	path = lib/evil
 	url = git@github.com:emacs-evil/evil.git
+[submodule "f"]
+	path = lib/f
+	url = git@github.com:rejeep/f.el.git
 [submodule "git-modes"]
 	path = lib/git-modes
 	url = git@github.com:magit/git-modes.git
 [submodule "inf-clojure"]
 	path = lib/inf-clojure
 	url = git@github.com:clojure-emacs/inf-clojure.git
+[submodule "inheritenv"]
+	path = lib/inheritenv
+	url = git@github.com:purcell/inheritenv.git
 [submodule "magit"]
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
@@ -59,6 +77,9 @@
 [submodule "paredit"]
 	path = lib/paredit
 	url = https://mumble.net/~campbell/git/paredit.git
+[submodule "s"]
+	path = lib/s
+	url = git@github.com:magnars/s.el.git
 [submodule "sqlite3"]
 	build-step = make
 	path = lib/sqlite3
