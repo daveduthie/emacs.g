@@ -11,7 +11,7 @@
   (evil-set-initial-state 'deadgrep-mode 'emacs))
 
 (use-package paredit
-  :hook prog-mode-hook)
+  :hook (prog-mode . paredit-mode))
 
 (use-package xref
   :defer 3
@@ -19,7 +19,7 @@
   (evil-define-key 'normal 'global (kbd "gr") 'xref-find-references))
 
 (use-package company
-  :hook prog-mode)
+  :hook (prog-mode . company-mode))
 
 (use-package vertico
   :init (vertico-mode))
