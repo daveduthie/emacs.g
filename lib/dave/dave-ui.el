@@ -1,4 +1,5 @@
-(set-frame-font "Source Code Pro 14" nil t)
+(custom-set-faces
+ '(default ((t (:inherit nil :height 140 :family "Source Code Pro")))))
 (load-theme 'modus-vivendi)
 
 (provide 'dave-ui)

@@ -1,6 +1,9 @@
 [borg]
 	pushDefault = locutus
 	collective = emacsg
+[submodule "aio"]
+	path = lib/aio
+	url = git@github.com:skeeto/emacs-aio.git
 [submodule "auto-compile"]
 	path = lib/auto-compile
 	url = git@github.com:emacscollective/auto-compile.git
@@ -30,9 +33,21 @@
 	no-makeinfo = dash-template.texi
 	path = lib/dash
 	url = git@github.com:magnars/dash.el.git
+[submodule "deadgrep"]
+	path = lib/deadgrep
+	url = git@github.com:Wilfred/deadgrep.git
 [submodule "diff-hl"]
 	path = lib/diff-hl
 	url = git@github.com:dgutov/diff-hl.git
+[submodule "docker"]
+	path = lib/docker
+	url = git@github.com:Silex/docker.el.git
+[submodule "docker-compose-mode"]
+	path = lib/docker-compose-mode
+	url = git@github.com:meqif/docker-compose-mode.git
+[submodule "dockerfile-mode"]
+	path = lib/dockerfile-mode
+	url = git@github.com:spotify/dockerfile-mode.git
 [submodule "eglot"]
 	path = lib/eglot
 	url = git@github.com:joaotavora/eglot.git
@@ -58,6 +73,15 @@
 [submodule "git-modes"]
 	path = lib/git-modes
 	url = git@github.com:magit/git-modes.git
+[submodule "git-timemachine"]
+	path = lib/git-timemachine
+	url = git@github.com:emacsmirror/git-timemachine.git
+[submodule "highlight-indent-guides"]
+	path = lib/highlight-indent-guides
+	url = git@github.com:DarthFennec/highlight-indent-guides.git
+[submodule "ibuffer-project"]
+	path = lib/ibuffer-project
+	url = git@github.com:muffinmad/emacs-ibuffer-project.git
 [submodule "inf-clojure"]
 	path = lib/inf-clojure
 	url = git@github.com:clojure-emacs/inf-clojure.git
@@ -68,28 +92,52 @@
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
 	url = git@github.com:magit/magit.git
+[submodule "markdown-mode"]
+	path = lib/markdown-mode
+	url = git@github.com:jrblevin/markdown-mode.git
 [submodule "orderless"]
 	path = lib/orderless
 	url = git@github.com:oantolin/orderless.git
+[submodule "org-modern"]
+	path = lib/org-modern
+	url = git@github.com:minad/org-modern.git
 [submodule "packed"]
 	path = lib/packed
 	url = git@github.com:emacscollective/packed.git
 [submodule "paredit"]
 	path = lib/paredit
 	url = https://mumble.net/~campbell/git/paredit.git
+[submodule "ranger"]
+	path = lib/ranger
+	url = git@github.com:ralesi/ranger.el.git
+[submodule "rust-mode"]
+	path = lib/rust-mode
+	url = git@github.com:rust-lang/rust-mode.git
+[submodule "rustic"]
+	path = lib/rustic
+	url = git@github.com:brotzeit/rustic.git
 [submodule "s"]
 	path = lib/s
 	url = git@github.com:magnars/s.el.git
+[submodule "spinner"]
+	path = lib/spinner
+	url = git@github.com:Malabarba/spinner.el.git
 [submodule "sqlite3"]
 	build-step = make
 	path = lib/sqlite3
 	url = git@github.com:pekingduck/emacs-sqlite3-api.git
+[submodule "tablist"]
+	path = lib/tablist
+	url = git@github.com:politza/tablist.git
 [submodule "transient"]
 	path = lib/transient
 	url = git@github.com:magit/transient.git
 [submodule "treepy"]
 	path = lib/treepy
 	url = git@github.com:volrath/treepy.el.git
+[submodule "typescript-mode"]
+	path = lib/typescript-mode
+	url = git@github.com:emacs-typescript/typescript.el.git
 [submodule "use-package"]
 	path = lib/use-package
 	url = git@github.com:jwiegley/use-package.git
@@ -102,3 +150,9 @@
 [submodule "with-editor"]
 	path = lib/with-editor
 	url = git@github.com:magit/with-editor.git
+[submodule "xterm-color"]
+	path = lib/xterm-color
+	url = git@github.com:atomontage/xterm-color.git
+[submodule "yaml-mode"]
+	path = lib/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git
