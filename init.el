@@ -76,6 +76,12 @@
   (require 'dave-org)
   (require 'dave-ui))
 
+(use-package ibuffer-project
+  :defer t
+  :init
+  (add-hook 'ibuffer-hook
+            (lambda () (setq ibuffer-filter-groups (ibuffer-project-generate-filter-groups)))))
+
 ;;; Long tail
 
 (use-package diff-hl

@@ -76,6 +76,9 @@
 [submodule "git-timemachine"]
 	path = lib/git-timemachine
 	url = git@github.com:emacsmirror/git-timemachine.git
+[submodule "graphql-mode"]
+	path = lib/graphql-mode
+	url = git@github.com:davazp/graphql-mode.git
 [submodule "highlight-indent-guides"]
 	path = lib/highlight-indent-guides
 	url = git@github.com:DarthFennec/highlight-indent-guides.git

@@ -21,6 +21,9 @@
 (use-package company
   :hook (prog-mode . company-mode))
 
+(use-package eglot
+  :hook ((clojure-mode rust-mode) . eglot-ensure))
+
 (use-package vertico
   :init (vertico-mode))
 
@@ -30,5 +33,10 @@
   (setq completion-styles '(orderless basic)
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
+
+(use-package files
+  :config
+  (setq backup-directory-alist
+	`(("." . ,(concat user-emacs-directory "file-backups")))))
 
 (provide 'dave-editing)

@@ -64,12 +64,22 @@ https://lifecheq.youtrack.cloud/issue//%\\1
            "* TODO [R] %?
 SCHEDULED: %T"
            :tree-type month)
-          ("c" "Current clock" entry (clock)))))
+          ("c" "Current clock" entry (clock))))
 
-(setq org-refile-targets
+  (setq org-refile-targets
         '((nil :maxlevel . 3)
           (org-agenda-files :maxlevel . 3))
         org-refile-use-outline-path 'file
-        org-outline-path-complete-in-steps nil)
+        org-outline-path-complete-in-steps nil))
+
+(use-package org-indent-mode
+  :hook org-mode)
+
+;;;###autoload
+(defun dd/org-today ()
+  (interactive)
+  (let ((dir "~/Documents/org/roam/daily")
+        (today (format-time-string "%Y-%m-%d")))
+    (find-file (concat dir "/" today ".org"))))
 
 (provide 'dave-org)
