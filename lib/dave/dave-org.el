@@ -1,5 +1,7 @@
 (use-package org
   :defer 5
+  :bind (:map org-mode-map
+	      ("<tab>" . org-cycle))
   :config
   (require 'org-tempo)                  ; enable `< s TAB` shortcuts
 

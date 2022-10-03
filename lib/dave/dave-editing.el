@@ -22,7 +22,13 @@
   :hook (prog-mode . company-mode))
 
 (use-package eglot
-  :hook ((clojure-mode rust-mode) . eglot-ensure))
+  :hook ((clojure-mode rust-mode) . eglot-ensure)
+  :config
+  (evil-define-key 'normal 'global (kbd ",a") 'eglot-code-actions)
+  (evil-define-key 'normal 'global (kbd ",r") 'eglot-rename))
+
+(use-package yasnippet
+  :init (yas-global-mode t))
 
 (use-package vertico
   :init (vertico-mode))

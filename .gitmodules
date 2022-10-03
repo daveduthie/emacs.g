@@ -48,6 +48,9 @@
 [submodule "dockerfile-mode"]
 	path = lib/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
+[submodule "ef-themes"]
+	path = lib/ef-themes
+	url = git@github.com:emacsmirror/ef-themes.git
 [submodule "eglot"]
 	path = lib/eglot
 	url = git@github.com:joaotavora/eglot.git
@@ -82,9 +85,15 @@
 [submodule "highlight-indent-guides"]
 	path = lib/highlight-indent-guides
 	url = git@github.com:DarthFennec/highlight-indent-guides.git
+[submodule "hl-todo"]
+	path = lib/hl-todo
+	url = git@github.com:tarsius/hl-todo.git
 [submodule "ibuffer-project"]
 	path = lib/ibuffer-project
 	url = git@github.com:muffinmad/emacs-ibuffer-project.git
+[submodule "iedit"]
+	path = lib/iedit
+	url = git@github.com:victorhge/iedit.git
 [submodule "inf-clojure"]
 	path = lib/inf-clojure
 	url = git@github.com:clojure-emacs/inf-clojure.git
@@ -98,6 +107,9 @@
 [submodule "markdown-mode"]
 	path = lib/markdown-mode
 	url = git@github.com:jrblevin/markdown-mode.git
+[submodule "multiple-cursors"]
+	path = lib/multiple-cursors
+	url = git@github.com:magnars/multiple-cursors.el.git
 [submodule "orderless"]
 	path = lib/orderless
 	url = git@github.com:oantolin/orderless.git
@@ -113,6 +125,9 @@
 [submodule "ranger"]
 	path = lib/ranger
 	url = git@github.com:ralesi/ranger.el.git
+[submodule "reformatter"]
+	path = lib/reformatter
+	url = git@github.com:purcell/emacs-reformatter.git
 [submodule "rust-mode"]
 	path = lib/rust-mode
 	url = git@github.com:rust-lang/rust-mode.git
@@ -159,3 +174,9 @@
 [submodule "yaml-mode"]
 	path = lib/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "yasnippet"]
+	path = lib/yasnippet
+	url = git@github.com:joaotavora/yasnippet.git
+[submodule "zprint-format"]
+	path = lib/zprint-format
+	url = git@github.com:dpassen/zprint-format.git

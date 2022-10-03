@@ -191,6 +191,11 @@
 (use-package inf-clojure
   :defer t)
 
+(use-package zprint-format
+  :commands (zprint-format-buffer
+             zprint-format-region
+             zprint-format-on-save-mode))
+
 ;;; Tequila worms
 
 (progn ;     startup
@@ -209,3 +214,4 @@
 ;; indent-tabs-mode: nil
 ;; End:
 ;;; init.el ends here
+(put 'narrow-to-region 'disabled nil)
