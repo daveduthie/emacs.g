@@ -48,9 +48,6 @@
 [submodule "dockerfile-mode"]
 	path = lib/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
-[submodule "ef-themes"]
-	path = lib/ef-themes
-	url = git@github.com:emacsmirror/ef-themes.git
 [submodule "eglot"]
 	path = lib/eglot
 	url = git@github.com:joaotavora/eglot.git
