@@ -74,6 +74,8 @@
   (add-to-list 'load-path (expand-file-name "lib/dave" borg-user-emacs-directory))
   (require 'dave-mac)
   (require 'dave-editing)
+  (require 'dave-haskell)
+  (require 'dave-rust)
   (require 'dave-org)
   (require 'dave-ui))
 

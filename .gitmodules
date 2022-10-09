@@ -79,6 +79,9 @@
 [submodule "graphql-mode"]
 	path = lib/graphql-mode
 	url = git@github.com:davazp/graphql-mode.git
+[submodule "haskell-mode"]
+	path = lib/haskell-mode
+	url = git@github.com:haskell/haskell-mode.git
 [submodule "highlight-indent-guides"]
 	path = lib/highlight-indent-guides
 	url = git@github.com:DarthFennec/highlight-indent-guides.git
