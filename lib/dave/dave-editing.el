@@ -1,3 +1,5 @@
+;; TODO: separate out clojure config
+
 (use-package winner-mode
   :defer 5)
 

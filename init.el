@@ -77,6 +77,7 @@
   (require 'dave-haskell)
   (require 'dave-rust)
   (require 'dave-org)
+  (require 'dave-markdown)
   (require 'dave-ui))
 
 (use-package ibuffer-project

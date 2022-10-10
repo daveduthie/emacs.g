@@ -4,6 +4,9 @@
 [submodule "aio"]
 	path = lib/aio
 	url = git@github.com:skeeto/emacs-aio.git
+[submodule "almost-mono-themes"]
+	path = lib/almost-mono-themes
+	url = git@github.com:cryon/almost-mono-themes.git
 [submodule "auto-compile"]
 	path = lib/auto-compile
 	url = git@github.com:emacscollective/auto-compile.git
@@ -48,6 +51,9 @@
 [submodule "dockerfile-mode"]
 	path = lib/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
+[submodule "edit-indirect"]
+	path = lib/edit-indirect
+	url = git@github.com:Fanael/edit-indirect.git
 [submodule "eglot"]
 	path = lib/eglot
 	url = git@github.com:joaotavora/eglot.git

@@ -77,11 +77,35 @@ SCHEDULED: %T"
 (use-package org-indent-mode
   :hook org-mode)
 
+(defvar dd/org-daily-path "~/Documents/org/daily")
+
+(defvar dd/org-daily-template
+  "
+
+* Daily review topics
+** Ensure others are making progress
+** Plan for next week
+** Make progress")
+
+(defun dd/org-daily-filename (date)
+  (concat dd/org-daily-path "/"
+	  (format-time-string "%Y-%m-%d" date) ".org"))
+
+(defun dd/org-daily (&optional date)
+  (interactive (list
+                (org-read-date "" 'totime nil nil
+                               (current-time) "")))
+  (setq date (or date (current-time)))
+  (find-file (dd/org-daily-filename date))
+  (when (= 0 (buffer-size))
+    (let ((datestr (format-time-string "#+TITLE: %Y-%m-%d %A" date)))
+      (insert datestr)
+      (insert dd/org-daily-template))))
+  
+
 ;;;###autoload
 (defun dd/org-today ()
   (interactive)
-  (let ((dir "~/Documents/org/roam/daily")
-        (today (format-time-string "%Y-%m-%d")))
-    (find-file (concat dir "/" today ".org"))))
+  (dd/org-daily))
 
 (provide 'dave-org)
