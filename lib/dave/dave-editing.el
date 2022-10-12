@@ -1,8 +1,5 @@
 ;; TODO: separate out clojure config
 
-(use-package winner-mode
-  :defer 5)
-
 (use-package hideshow
   :hook (prog-mode . hs-minor-mode))
 
@@ -34,6 +31,14 @@
 
 (use-package vertico
   :init (vertico-mode))
+
+(use-package consult
+  :defer 1
+  :init
+  (evil-define-key 'normal 'global (kbd "<SPC> s p") 'consult-ripgrep)
+  (evil-define-key 'normal 'global (kbd "<SPC> s l") 'consult-line)
+  (evil-define-key 'normal 'global (kbd ", e") 'consult-flymake)
+  (evil-define-key 'normal 'global (kbd ", i") 'consult-imenu))
 
 (use-package orderless
   :defer 2

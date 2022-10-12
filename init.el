@@ -70,9 +70,10 @@
            (float-time (time-subtract (current-time)
                                       before-user-init-time))))
 
-(progn ; Load personal customizations
+(progn                                  ; Load personal customizations
   (add-to-list 'load-path (expand-file-name "lib/dave" borg-user-emacs-directory))
   (require 'dave-mac)
+  (provide 'dave-system)
   (require 'dave-editing)
   (require 'dave-haskell)
   (require 'dave-rust)

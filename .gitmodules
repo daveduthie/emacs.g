@@ -10,6 +10,9 @@
 [submodule "auto-compile"]
 	path = lib/auto-compile
 	url = git@github.com:emacscollective/auto-compile.git
+[submodule "avy"]
+	path = lib/avy
+	url = git@github.com:abo-abo/avy.git
 [submodule "borg"]
 	path = lib/borg
 	url = git@github.com:emacscollective/borg.git
@@ -25,6 +28,9 @@
 [submodule "company"]
 	path = lib/company
 	url = git@github.com:company-mode/company-mode.git
+[submodule "company-terraform"]
+	path = lib/company-terraform
+	url = git@github.com:rafalcieslak/emacs-company-terraform.git
 [submodule "compat"]
 	path = lib/compat
 	url = https://git.sr.ht/~pkal/compat
@@ -76,6 +82,9 @@
 [submodule "f"]
 	path = lib/f
 	url = git@github.com:rejeep/f.el.git
+[submodule "flymake-shellcheck"]
+	path = lib/flymake-shellcheck
+	url = git@github.com:federicotdn/flymake-shellcheck.git
 [submodule "git-modes"]
 	path = lib/git-modes
 	url = git@github.com:magit/git-modes.git
@@ -88,6 +97,9 @@
 [submodule "haskell-mode"]
 	path = lib/haskell-mode
 	url = git@github.com:haskell/haskell-mode.git
+[submodule "hcl-mode"]
+	path = lib/hcl-mode
+	url = git@github.com:purcell/emacs-hcl-mode.git
 [submodule "highlight-indent-guides"]
 	path = lib/highlight-indent-guides
 	url = git@github.com:DarthFennec/highlight-indent-guides.git
@@ -153,6 +165,9 @@
 [submodule "tablist"]
 	path = lib/tablist
 	url = git@github.com:politza/tablist.git
+[submodule "terraform-mode"]
+	path = lib/terraform-mode
+	url = git@github.com:emacsorphanage/terraform-mode.git
 [submodule "transient"]
 	path = lib/transient
 	url = git@github.com:magit/transient.git
