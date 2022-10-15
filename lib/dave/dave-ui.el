@@ -1,5 +1,5 @@
 (custom-set-faces
- '(default ((t (:inherit nil :height 140 :family "Iosevka SS08")))))
+ '(default ((t (:inherit nil :height 140 :family "JetBrains Mono")))))
 
 (load-theme 'modus-operandi)
 
