@@ -75,6 +75,7 @@
   (require 'dave-mac)
   (provide 'dave-system)
   (require 'dave-editing)
+  (require 'dave-clojure)
   (require 'dave-haskell)
   (require 'dave-rust)
   (require 'dave-org)
@@ -192,14 +193,6 @@
 
 (use-package which-key
   :init (which-key-mode))
-
-(use-package inf-clojure
-  :defer t)
-
-(use-package zprint-format
-  :commands (zprint-format-buffer
-             zprint-format-region
-             zprint-format-on-save-mode))
 
 ;;; Tequila worms
 
