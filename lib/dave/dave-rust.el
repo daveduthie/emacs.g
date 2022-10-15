@@ -1,6 +1,9 @@
 (use-package rustic-mode
   :defer t
   :config
-  (add-hook 'rustic-mode-hook (lambda () (electric-pair-mode t))))
+  (setq rustic-lsp-client 'eglot))
+
+(use-package electric-pair
+  :hook (rustic-mode . electric-pair-mode))
 
 (provide 'dave-rust)

@@ -74,18 +74,13 @@
   (require 'dave-mac)
   (provide 'dave-system)
   (require 'dave-editing)
+  (require 'dave-navigation)
   (require 'dave-clojure)
   (require 'dave-haskell)
   (require 'dave-rust)
   (require 'dave-org)
   (require 'dave-markdown)
   (require 'dave-ui))
-
-(use-package ibuffer-project
-  :defer t
-  :init
-  (add-hook 'ibuffer-hook
-            (lambda () (setq ibuffer-filter-groups (ibuffer-project-generate-filter-groups)))))
 
 ;;; Long tail
 

@@ -1,5 +1,3 @@
-;; TODO: separate out clojure config
-
 (use-package hideshow
   :hook (prog-mode . hs-minor-mode))
 
@@ -7,24 +5,14 @@
   :init (evil-mode)
   :config
   (evil-set-initial-state 'xref--xref-buffer-mode 'emacs)
-  (evil-set-initial-state 'deadgrep-mode 'emacs))
+  (evil-set-initial-state 'deadgrep-mode 'emacs)
+  (setq evil-undo-system 'undo-redo))
 
 (use-package paredit
   :hook (prog-mode . paredit-mode))
 
-(use-package xref
-  :defer 3
-  :config
-  (evil-define-key 'normal 'global (kbd "gr") 'xref-find-references))
-
 (use-package company
   :hook (prog-mode . company-mode))
-
-(use-package eglot
-  :hook ((clojure-mode rust-mode) . eglot-ensure)
-  :config
-  (evil-define-key 'normal 'global (kbd ",a") 'eglot-code-actions)
-  (evil-define-key 'normal 'global (kbd ",r") 'eglot-rename))
 
 (use-package yasnippet
   :init (yas-global-mode t))
@@ -47,6 +35,7 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
+;; TODO: move to a sanity lib
 (use-package files
   :config
   (setq backup-directory-alist
