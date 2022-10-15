@@ -19,6 +19,9 @@
 [submodule "browse-at-remote"]
 	path = lib/browse-at-remote
 	url = git@github.com:rmuslimov/browse-at-remote.git
+[submodule "cider"]
+	path = lib/cider
+	url = git@github.com:clojure-emacs/cider.git
 [submodule "clojure-mode"]
 	path = lib/clojure-mode
 	url = git@github.com:clojure-emacs/clojure-mode.git
@@ -140,6 +143,15 @@
 [submodule "paredit"]
 	path = lib/paredit
 	url = https://mumble.net/~campbell/git/paredit.git
+[submodule "parseclj"]
+	path = lib/parseclj
+	url = git@github.com:clojure-emacs/parseclj.git
+[submodule "parseedn"]
+	path = lib/parseedn
+	url = git@github.com:clojure-emacs/parseedn.git
+[submodule "queue"]
+	path = lib/queue
+	url = git@github.com:emacsmirror/queue.git
 [submodule "ranger"]
 	path = lib/ranger
 	url = git@github.com:ralesi/ranger.el.git
@@ -155,6 +167,9 @@
 [submodule "s"]
 	path = lib/s
 	url = git@github.com:magnars/s.el.git
+[submodule "sesman"]
+	path = lib/sesman
+	url = git@github.com:vspinu/sesman.git
 [submodule "spinner"]
 	path = lib/spinner
 	url = git@github.com:Malabarba/spinner.el.git
