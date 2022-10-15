@@ -81,6 +81,7 @@ SCHEDULED: %T"
 
 (defvar dd/org-daily-template
   "
+#+STARTUP: fold
 
 * Daily review topics
 ** Ensure others are making progress
