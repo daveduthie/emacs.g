@@ -6,6 +6,10 @@
   (setq eglot-confirm-server-initiated-edits nil)
   (setq eglot-connect-timeout 60))
 
+(use-package project
+  :config
+  (evil-define-key 'normal 'global (kbd "<SPC> <SPC>") 'project-find-file))
+
 (use-package xref
   :defer 3
   :config

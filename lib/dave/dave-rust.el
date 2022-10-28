@@ -1,6 +1,6 @@
 (use-package rustic-mode
   :defer t
-  :config
+  :init
   (setq rustic-lsp-client 'eglot))
 
 (use-package electric-pair
