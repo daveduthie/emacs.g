@@ -7,6 +7,9 @@
 [submodule "almost-mono-themes"]
 	path = lib/almost-mono-themes
 	url = git@github.com:cryon/almost-mono-themes.git
+[submodule "async"]
+	path = lib/async
+	url = git@github.com:jwiegley/emacs-async.git
 [submodule "auto-compile"]
 	path = lib/auto-compile
 	url = git@github.com:emacscollective/auto-compile.git
@@ -125,6 +128,9 @@
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
 	url = git@github.com:magit/magit.git
+[submodule "magit-todos"]
+	path = lib/magit-todos
+	url = git@github.com:alphapapa/magit-todos.git
 [submodule "markdown-mode"]
 	path = lib/markdown-mode
 	url = git@github.com:jrblevin/markdown-mode.git
