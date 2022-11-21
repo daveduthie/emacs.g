@@ -10,6 +10,20 @@
   :config
   (evil-define-key 'normal 'global (kbd "<SPC> <SPC>") 'project-find-file))
 
+
+(defun dd/tab-name ()
+  (if-let ((project-dir (cdr (project-current))))
+      (file-name-nondirectory
+       (directory-file-name
+	(file-name-directory project-dir)))
+    (buffer-name)))
+
+(use-package tab-bar
+  :bind (("M-]" . tab-bar-switch-to-next-tab)
+	 ("M-[" . tab-bar-switch-to-prev-tab))
+  :init (tab-bar-mode t)
+  :config (setq tab-bar-tab-name-function 'dd/tab-name))
+
 (use-package xref
   :defer 3
   :config
