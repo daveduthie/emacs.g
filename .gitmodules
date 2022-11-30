@@ -155,6 +155,9 @@
 [submodule "parseedn"]
 	path = lib/parseedn
 	url = git@github.com:clojure-emacs/parseedn.git
+[submodule "prettier-js"]
+	path = lib/prettier-js
+	url = git@github.com:prettier/prettier-emacs.git
 [submodule "queue"]
 	path = lib/queue
 	url = git@github.com:emacsmirror/queue.git
