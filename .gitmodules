@@ -82,6 +82,9 @@
 [submodule "evil"]
 	path = lib/evil
 	url = git@github.com:emacs-evil/evil.git
+[submodule "evil-surround"]
+	path = lib/evil-surround
+	url = https://github.com/emacs-evil/evil-surround
 [submodule "f"]
 	path = lib/f
 	url = git@github.com:rejeep/f.el.git

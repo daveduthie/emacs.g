@@ -8,6 +8,10 @@
   (evil-set-initial-state 'deadgrep-mode 'emacs)
   (setq evil-undo-system 'undo-redo))
 
+(use-package evil-surround
+  :config
+  (global-evil-surround-mode 1))
+
 (use-package paredit
   :hook (prog-mode . paredit-mode))
 
