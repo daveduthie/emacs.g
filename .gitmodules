@@ -63,6 +63,9 @@
 [submodule "dockerfile-mode"]
 	path = lib/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
+[submodule "doom-themes"]
+	path = lib/doom-themes
+	url = https://github.com/doomemacs/themes
 [submodule "edit-indirect"]
 	path = lib/edit-indirect
 	url = git@github.com:Fanael/edit-indirect.git
@@ -207,6 +210,9 @@
 [submodule "which-key"]
 	path = lib/which-key
 	url = git@github.com:justbur/emacs-which-key.git
+[submodule "window-number"]
+	path = lib/window-number
+	url = https://github.com/nikolas/window-number
 [submodule "with-editor"]
 	path = lib/with-editor
 	url = git@github.com:magit/with-editor.git

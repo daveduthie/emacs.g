@@ -5,7 +5,7 @@
   :config
   (require 'org-tempo)                  ; enable `< s TAB` shortcuts
 
-  (setq org-agenda-files '("~/Documents/org/")
+  (setq org-agenda-files "~/Documents/org/agenda-files.org"
         org-directory "~/Documents/org/"
 
         org-clock-report-include-clocking-task t

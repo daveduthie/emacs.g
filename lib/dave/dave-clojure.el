@@ -9,6 +9,7 @@
 (use-package cider
   :defer t
   :config
+  (evil-define-key 'normal 'global (kbd "<SPC> r r") 'cider-ns-refresh)
   (setq cider-xref-fn-depth 90))
 
 (use-package zprint-format

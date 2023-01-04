@@ -13,7 +13,9 @@
   (global-evil-surround-mode 1))
 
 (use-package paredit
-  :hook (prog-mode . paredit-mode))
+  :hook (prog-mode . paredit-mode)
+  ;; :config (electric-indent-mode -1)
+  )
 
 (use-package company
   :hook (prog-mode . company-mode))
