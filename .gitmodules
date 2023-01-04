@@ -228,3 +228,6 @@
 [submodule "zprint-format"]
 	path = lib/zprint-format
 	url = git@github.com:dpassen/zprint-format.git
+[submodule "llama"]
+	path = lib/llama
+	url = https://git.sr.ht/~tarsius/llama
