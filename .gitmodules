@@ -100,6 +100,9 @@
 [submodule "git-timemachine"]
 	path = lib/git-timemachine
 	url = git@github.com:emacsmirror/git-timemachine.git
+[submodule "goto-chg"]
+	path = lib/goto-chg
+	url = https://github.com/emacs-evil/goto-chg
 [submodule "graphql-mode"]
 	path = lib/graphql-mode
 	url = git@github.com:davazp/graphql-mode.git
@@ -127,6 +130,9 @@
 [submodule "inheritenv"]
 	path = lib/inheritenv
 	url = git@github.com:purcell/inheritenv.git
+[submodule "llama"]
+	path = lib/llama
+	url = https://git.sr.ht/~tarsius/llama
 [submodule "magit"]
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
@@ -228,6 +234,3 @@
 [submodule "zprint-format"]
 	path = lib/zprint-format
 	url = git@github.com:dpassen/zprint-format.git
-[submodule "llama"]
-	path = lib/llama
-	url = https://git.sr.ht/~tarsius/llama
