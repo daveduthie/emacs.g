@@ -12,7 +12,7 @@
 
 
 (defun dd/tab-name ()
-  (if-let ((project-dir (cdr (project-current))))
+  (if-let ((project-dir (caddr (project-current))))
       (file-name-nondirectory
        (directory-file-name
 	(file-name-directory project-dir)))
