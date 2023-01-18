@@ -4,7 +4,8 @@
   (evil-define-key 'normal 'global (kbd ",a") 'eglot-code-actions)
   (evil-define-key 'normal 'global (kbd ",r") 'eglot-rename)
   (setq eglot-confirm-server-initiated-edits nil)
-  (setq eglot-connect-timeout 60))
+  (setq eglot-connect-timeout 60)
+  (setq eglot-sync-connect 0))
 
 (use-package project
   :config
