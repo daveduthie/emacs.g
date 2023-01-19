@@ -164,9 +164,6 @@
 [submodule "queue"]
 	path = lib/queue
 	url = git@github.com:emacsmirror/queue.git
-[submodule "ranger"]
-	path = lib/ranger
-	url = git@github.com:ralesi/ranger.el.git
 [submodule "reformatter"]
 	path = lib/reformatter
 	url = git@github.com:purcell/emacs-reformatter.git
