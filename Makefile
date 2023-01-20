@@ -26,3 +26,6 @@ codespell-fix:
 	  --exclude-file ~/.emacs.d/etc/codespell/ignore-lines \
 	  --skip $(shell sed '/^\s*$$/d;/^\s*#.*$$/d;s/#.*//;s/\s//g' \
 	  ~/.emacs.d/etc/codespell/ignore-files | tr "\\n" ",")
+
+update-drones:
+	git submodule update --rebase --recursive --remote --jobs=10
