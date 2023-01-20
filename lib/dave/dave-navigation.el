@@ -28,13 +28,13 @@
 (use-package xref
   :defer 3
   :config
-  (evil-define-key 'normal 'global (kbd "gr") 'xref-find-references))
+  (evil-define-key 'normal 'global (kbd "gr") 'xref-find-references)
+  (evil-define-key 'normal 'global (kbd "gd") 'xref-find-definitions))
 
 (use-package ibuffer-project
   :defer t
   :init
   (add-hook 'ibuffer-hook
             (lambda () (setq ibuffer-filter-groups (ibuffer-project-generate-filter-groups)))))
-
 
 (provide 'dave-navigation)
