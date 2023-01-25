@@ -47,4 +47,7 @@
   (setq backup-directory-alist
 	`(("." . ,(concat user-emacs-directory "file-backups")))))
 
+(use-package autorevert
+  :hook (fundamental-mode . auto-revert-mode))
+
 (provide 'dave-editing)
