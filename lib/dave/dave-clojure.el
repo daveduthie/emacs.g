@@ -9,6 +9,7 @@
 (use-package cider
   :defer t
   :config
+  ;; TODO: can I set this in a cider keymap?
   (evil-define-key 'normal 'global (kbd "<SPC> r r") 'cider-ns-refresh)
   (setq markdown-indent-on-enter nil)
   (setq cider-xref-fn-depth 90))

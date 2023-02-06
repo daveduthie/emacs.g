@@ -54,6 +54,9 @@
 [submodule "diff-hl"]
 	path = lib/diff-hl
 	url = git@github.com:dgutov/diff-hl.git
+[submodule "dirvish"]
+	path = lib/dirvish
+	url = https://github.com/alexluigit/dirvish
 [submodule "docker"]
 	path = lib/docker
 	url = git@github.com:Silex/docker.el.git
@@ -130,6 +133,9 @@
 [submodule "llama"]
 	path = lib/llama
 	url = https://git.sr.ht/~tarsius/llama
+[submodule "lua-mode"]
+	path = lib/lua-mode
+	url = https://github.com/immerrr/lua-mode
 [submodule "magit"]
 	no-byte-compile = lisp/magit-libgit.el
 	path = lib/magit
@@ -207,6 +213,9 @@
 [submodule "vertico"]
 	path = lib/vertico
 	url = git@github.com:minad/vertico.git
+[submodule "vscode-icon"]
+	path = lib/vscode-icon
+	url = https://github.com/jojojames/vscode-icon-emacs
 [submodule "which-key"]
 	path = lib/which-key
 	url = git@github.com:justbur/emacs-which-key.git

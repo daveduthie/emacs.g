@@ -85,6 +85,7 @@ SCHEDULED: %T"
 
 * Daily review topics
 ** Ensure others are making progress
+https://lifecheq.youtrack.cloud/agiles/121-2/current
 ** Plan for next week
 ** Make progress")
 
