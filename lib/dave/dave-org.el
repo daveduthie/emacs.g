@@ -110,4 +110,7 @@ https://lifecheq.youtrack.cloud/agiles/121-2/current
   (interactive)
   (dd/org-daily))
 
+(use-package org-modern
+  :hook org-mode)
+
 (provide 'dave-org)

@@ -4,6 +4,9 @@
 [submodule "aio"]
 	path = lib/aio
 	url = git@github.com:skeeto/emacs-aio.git
+[submodule "all-the-icons"]
+	path = lib/all-the-icons
+	url = https://github.com/domtronn/all-the-icons.el
 [submodule "almost-mono-themes"]
 	path = lib/almost-mono-themes
 	url = git@github.com:cryon/almost-mono-themes.git
@@ -76,6 +79,9 @@
 	no-byte-compile = emacsql-pg.el
 	path = lib/emacsql
 	url = git@github.com:skeeto/emacsql.git
+[submodule "embark"]
+	path = lib/embark
+	url = https://github.com/oantolin/embark
 [submodule "envrc"]
 	path = lib/envrc
 	url = git@github.com:purcell/envrc.git
@@ -207,15 +213,15 @@
 [submodule "typescript-mode"]
 	path = lib/typescript-mode
 	url = git@github.com:emacs-typescript/typescript.el.git
-[submodule "use-package"]
-	path = lib/use-package
-	url = git@github.com:jwiegley/use-package.git
 [submodule "vertico"]
 	path = lib/vertico
 	url = git@github.com:minad/vertico.git
 [submodule "vscode-icon"]
 	path = lib/vscode-icon
 	url = https://github.com/jojojames/vscode-icon-emacs
+[submodule "vterm"]
+	path = lib/vterm
+	url = https://github.com/akermu/emacs-libvterm
 [submodule "which-key"]
 	path = lib/which-key
 	url = git@github.com:justbur/emacs-which-key.git

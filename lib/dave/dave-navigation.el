@@ -38,6 +38,7 @@
             (lambda () (setq ibuffer-filter-groups (ibuffer-project-generate-filter-groups)))))
 
 (use-package window-number
+  :hook prog-mode
   :bind (("C-x o" . window-number-switch)))
 
 (add-to-list 'load-path (expand-file-name "lib/dirvish/extensions" user-emacs-directory))
@@ -61,6 +62,7 @@
   (dirvish-override-dired-mode)
   (dirvish-peek-mode)
   (dirvish-side-follow-mode)
+  (setq insert-directory-program "gls")
   :config
   (setq dirvish-attributes
 	'(vc-state file-size git-msg subtree-state all-the-icons collapse file-time))

@@ -76,6 +76,7 @@
   (require 'dave-editing)
   (require 'dave-navigation)
   (require 'dave-clojure)
+  (require 'dave-terraform)
   (require 'dave-haskell)
   (require 'dave-rust)
   (require 'dave-org)
