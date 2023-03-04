@@ -32,6 +32,7 @@
   (setq use-package-verbose t))
 
 (use-package dash
+  :defer t
   :config (global-dash-fontify-mode 1))
 
 (use-package eieio
@@ -86,6 +87,7 @@
 ;;; Long tail
 
 (use-package diff-hl
+  :defer t
   :config
   (setq diff-hl-draw-borders nil)
   (global-diff-hl-mode)
@@ -103,7 +105,7 @@
   :config (setq dired-listing-switches "-alh"))
 
 (use-package eldoc
-  :when (version< "25" emacs-version)
+  :defer t
   :config (global-eldoc-mode))
 
 (use-package help
@@ -114,6 +116,7 @@
   (setq isearch-allow-scroll t))
 
 (use-package lisp-mode
+  :defer t
   :config
   (add-hook 'emacs-lisp-mode-hook 'outline-minor-mode)
   (add-hook 'emacs-lisp-mode-hook 'reveal-mode)

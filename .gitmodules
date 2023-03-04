@@ -243,3 +243,7 @@
 [submodule "zprint-format"]
 	path = lib/zprint-format
 	url = git@github.com:dpassen/zprint-format.git
+[submodule "lib/magit"]
+	path = lib/magit
+	url = https://github.com/magit/magit
+	branch = main
