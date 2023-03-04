@@ -39,6 +39,7 @@
 
 (use-package window-number
   :hook prog-mode
+  :config (window-number-meta-mode)
   :bind (("C-x o" . window-number-switch)))
 
 (add-to-list 'load-path (expand-file-name "lib/dirvish/extensions" user-emacs-directory))
