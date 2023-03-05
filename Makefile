@@ -28,4 +28,4 @@ codespell-fix:
 	  ~/.emacs.d/etc/codespell/ignore-files | tr "\\n" ",")
 
 update-drones:
-	git submodule foreach 'git checkout $(basename $(git symbolic-ref --short refs/remotes/origin/HEAD)); git pull'
+	git submodule update --recursive --remote --jobs=20
