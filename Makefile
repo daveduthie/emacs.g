@@ -28,4 +28,5 @@ codespell-fix:
 	  ~/.emacs.d/etc/codespell/ignore-files | tr "\\n" ",")
 
 update-drones:
-	git submodule update --recursive --remote --jobs=20
+	# git submodule update --recursive --remote --rebase --jobs=20
+	git submodule foreach git pull
