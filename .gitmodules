@@ -136,6 +136,10 @@
 [submodule "inheritenv"]
 	path = lib/inheritenv
 	url = git@github.com:purcell/inheritenv.git
+[submodule "lib/magit"]
+	path = lib/magit
+	url = https://github.com/magit/magit
+	branch = main
 [submodule "llama"]
 	path = lib/llama
 	url = https://git.sr.ht/~tarsius/llama
@@ -170,6 +174,12 @@
 [submodule "parseedn"]
 	path = lib/parseedn
 	url = git@github.com:clojure-emacs/parseedn.git
+[submodule "pcre2el"]
+	path = lib/pcre2el
+	url = https://github.com/joddie/pcre2el
+[submodule "pdf-tools"]
+	path = lib/pdf-tools
+	url = https://github.com/vedang/pdf-tools
 [submodule "prettier-js"]
 	path = lib/prettier-js
 	url = git@github.com:prettier/prettier-emacs.git
@@ -243,7 +253,3 @@
 [submodule "zprint-format"]
 	path = lib/zprint-format
 	url = git@github.com:dpassen/zprint-format.git
-[submodule "lib/magit"]
-	path = lib/magit
-	url = https://github.com/magit/magit
-	branch = main

@@ -29,4 +29,4 @@ codespell-fix:
 
 update-drones:
 	# git submodule update --recursive --remote --rebase --jobs=20
-	git submodule foreach git pull
+	git submodule foreach "git checkout main || git checkout master && git pull"
