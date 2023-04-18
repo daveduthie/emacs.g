@@ -7,7 +7,7 @@
   (mapc #'disable-theme custom-enabled-themes)
   (pcase appearance
     ('light (load-theme 'doom-one-light t))
-    ('dark (load-theme 'doom-one t))))
+    ('dark (load-theme 'doom-old-hope t))))
 
 (add-hook 'ns-system-appearance-change-functions #'dd/apply-theme)
 

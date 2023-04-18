@@ -29,4 +29,24 @@
 	     zprint-format-region
              zprint-format-on-save-mode))
 
+;;;; Portal integration
+;; https://cljdoc.org/d/djblue/portal/0.37.1/doc/editors/emacs
+
+;; def portal to the dev namespace to allow dereferencing via @dev/portal
+(defun portal.api/open ()
+  (interactive)
+  (cider-nrepl-sync-request:eval
+    "(do (ns dev) (def portal ((requiring-resolve 'portal.api/open))) (add-tap (requiring-resolve 'portal.api/submit)))"))
+
+(defun portal.api/clear ()
+  (interactive)
+  (cider-nrepl-sync-request:eval "(portal.api/clear)"))
+
+(defun portal.api/close ()
+  (interactive)
+  (cider-nrepl-sync-request:eval "(portal.api/close)"))
+
+(evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p o") #'portal.api/open)
+(evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p c") #'portal.api/clear)
+
 (provide 'dave-clojure)

@@ -1,3 +1,6 @@
+(use-package recentf
+  :init (recentf-mode 1))
+
 (use-package eglot
   :hook ((clojure-mode rust-mode) . eglot-ensure)
   :config

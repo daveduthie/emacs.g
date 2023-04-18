@@ -80,14 +80,7 @@ SCHEDULED: %T"
 (defvar dd/org-daily-path "~/Documents/org/daily")
 
 (defvar dd/org-daily-template
-  "
-#+STARTUP: fold
-
-* Daily review topics
-** Ensure others are making progress
-https://lifecheq.youtrack.cloud/agiles/121-2/current
-** Plan for next week
-** Make progress")
+  "\n#+STARTUP: fold")
 
 (defun dd/org-daily-filename (date)
   (concat dd/org-daily-path "/"
@@ -111,6 +104,6 @@ https://lifecheq.youtrack.cloud/agiles/121-2/current
   (dd/org-daily))
 
 (use-package org-modern
-  :hook org-mode)
+  :hook (org-mode . global-org-modern-mode))
 
 (provide 'dave-org)
