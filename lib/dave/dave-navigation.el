@@ -1,4 +1,5 @@
 (use-package recentf
+  :defer 1
   :init (recentf-mode 1))
 
 (use-package eglot
@@ -23,6 +24,7 @@
     (buffer-name)))
 
 (use-package tab-bar
+  :defer 1
   :bind (("M-]" . tab-bar-switch-to-next-tab)
 	 ("M-[" . tab-bar-switch-to-prev-tab))
   :init (tab-bar-mode t)
@@ -45,29 +47,33 @@
   :config (window-number-meta-mode)
   :bind (("C-x o" . window-number-switch)))
 
-(add-to-list 'load-path (expand-file-name "lib/dirvish/extensions" user-emacs-directory))
 
-(use-package dirvish-collapse)
-(use-package dirvish-emerge)
-(use-package dirvish-fd)
-(use-package dirvish-history)
-(use-package dirvish-icons)
-(use-package dirvish-ls)
-(use-package dirvish-narrow)
-(use-package dirvish-peek)
-(use-package dirvish-quick-access)
-(use-package dirvish-side)
-(use-package dirvish-subtree)
-(use-package dirvish-vc)
-(use-package dirvish-yank)
+(add-to-list 'load-path (expand-file-name "lib/dirvish/extensions"
+					  user-emacs-directory))
+
+(use-package dirvish-collapse :defer 2)
+(use-package dirvish-emerge :defer 2)
+(use-package dirvish-fd :defer 2)
+(use-package dirvish-history :defer 2)
+(use-package dirvish-icons :defer 2)
+(use-package dirvish-ls :defer 2)
+(use-package dirvish-narrow :defer 2)
+(use-package dirvish-peek :defer 2)
+(use-package dirvish-quick-access :defer 2)
+(use-package dirvish-side :defer 2)
+(use-package dirvish-subtree :defer 2)
+(use-package dirvish-vc :defer 2)
+(use-package dirvish-yank :defer 2)
 
 (use-package dirvish
+  :after (dirvish-peek)
+  :defer 3
   :init
   (dirvish-override-dired-mode)
+  :config
   (dirvish-peek-mode)
   (dirvish-side-follow-mode)
   (setq insert-directory-program "gls")
-  :config
   (setq dirvish-attributes
 	'(vc-state file-size git-msg subtree-state all-the-icons collapse file-time))
   (setq dirvish-mode-line-format '(:left (sort symlink) :right (vc-info yank index)))

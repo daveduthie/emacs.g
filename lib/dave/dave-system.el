@@ -1,4 +1,4 @@
 (use-package envrc-mode
-  :hook fundamental-mode)
+  :defer 3)
 
 (provide 'dave-system)

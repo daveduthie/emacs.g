@@ -1,5 +1,5 @@
 (use-package org
-  :defer 5
+  :defer 1
   :bind (:map org-mode-map
 	      ("<tab>" . org-cycle))
   :config
@@ -80,7 +80,7 @@ SCHEDULED: %T"
 (defvar dd/org-daily-path "~/Documents/org/daily")
 
 (defvar dd/org-daily-template
-  "\n#+STARTUP: fold")
+  "\n#+STARTUP: showall")
 
 (defun dd/org-daily-filename (date)
   (concat dd/org-daily-path "/"
@@ -104,6 +104,8 @@ SCHEDULED: %T"
   (dd/org-daily))
 
 (use-package org-modern
-  :hook (org-mode . global-org-modern-mode))
+  :after org
+  :defer 5
+  :config (global-org-modern-mode 1))
 
 (provide 'dave-org)
