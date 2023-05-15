@@ -1,5 +1,5 @@
 (use-package org
-  :defer 1
+  :defer 2
   :bind (:map org-mode-map
 	      ("<tab>" . org-cycle))
   :config

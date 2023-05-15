@@ -39,6 +39,7 @@
   :defer t)
 
 (use-package auto-compile
+  :defer 1
   :config
   (setq auto-compile-display-buffer               nil)
   (setq auto-compile-mode-line-counter            t)
@@ -140,26 +141,30 @@
   :config (setq Man-width 80))
 
 (use-package paren
+  :defer 3
   :config (show-paren-mode))
 
 (use-package prog-mode
+  :defer 3
   :config (global-prettify-symbols-mode)
   (defun indicate-buffer-boundaries-left ()
     (setq indicate-buffer-boundaries 'left))
   (add-hook 'prog-mode-hook 'indicate-buffer-boundaries-left))
 
 (use-package recentf
-  :demand t
+  :defer 5
   :config (add-to-list 'recentf-exclude "^/\\(?:ssh\\|su\\|sudo\\)?x?:"))
 
 (use-package savehist
+  :defer 5
   :config (savehist-mode))
 
 (use-package saveplace
-  :when (version< "25" emacs-version)
+  :defer 5
   :config (save-place-mode))
 
 (use-package simple
+  :defer 5
   :config (column-number-mode))
 
 (use-package smerge-mode
@@ -189,6 +194,7 @@
   :config (cl-pushnew 'tramp-own-remote-path tramp-remote-path))
 
 (use-package which-key
+  :defer 1
   :init (which-key-mode))
 
 ;;; Tequila worms

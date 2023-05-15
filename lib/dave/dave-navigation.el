@@ -1,5 +1,5 @@
 (use-package recentf
-  :defer 1
+  :defer 5
   :init (recentf-mode 1))
 
 (use-package eglot
@@ -12,6 +12,7 @@
   (setq eglot-sync-connect 0))
 
 (use-package project
+  :defer 3
   :config
   (evil-define-key 'normal 'global (kbd "<SPC> <SPC>") 'project-find-file))
 
@@ -31,7 +32,7 @@
   :config (setq tab-bar-tab-name-function 'dd/tab-name))
 
 (use-package xref
-  :defer 3
+  :defer 5
   :config
   (evil-define-key 'normal 'global (kbd "gr") 'xref-find-references)
   (evil-define-key 'normal 'global (kbd "gd") 'xref-find-definitions))
@@ -51,23 +52,23 @@
 (add-to-list 'load-path (expand-file-name "lib/dirvish/extensions"
 					  user-emacs-directory))
 
-(use-package dirvish-collapse :defer 2)
-(use-package dirvish-emerge :defer 2)
-(use-package dirvish-fd :defer 2)
-(use-package dirvish-history :defer 2)
-(use-package dirvish-icons :defer 2)
-(use-package dirvish-ls :defer 2)
-(use-package dirvish-narrow :defer 2)
-(use-package dirvish-peek :defer 2)
-(use-package dirvish-quick-access :defer 2)
-(use-package dirvish-side :defer 2)
-(use-package dirvish-subtree :defer 2)
-(use-package dirvish-vc :defer 2)
-(use-package dirvish-yank :defer 2)
+(use-package dirvish-collapse :defer 5)
+(use-package dirvish-emerge :defer 5)
+(use-package dirvish-fd :defer 5)
+(use-package dirvish-history :defer 5)
+(use-package dirvish-icons :defer 5)
+(use-package dirvish-ls :defer 5)
+(use-package dirvish-narrow :defer 5)
+(use-package dirvish-peek :defer 5)
+(use-package dirvish-quick-access :defer 5)
+(use-package dirvish-side :defer 5)
+(use-package dirvish-subtree :defer 5)
+(use-package dirvish-vc :defer 5)
+(use-package dirvish-yank :defer 5)
 
 (use-package dirvish
   :after (dirvish-peek)
-  :defer 3
+  :defer 5
   :init
   (dirvish-override-dired-mode)
   :config
