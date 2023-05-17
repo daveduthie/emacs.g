@@ -83,6 +83,12 @@
   (setq dirvish-header-line-format '(:left (path) :right (free-space)))
   (setq dired-listing-switches
 	"-l --almost-all --human-readable --group-directories-first --no-group")
+  ;; https://github.com/alexluigit/dirvish/issues/179#issuecomment-1445044352
+  (advice-add 'dirvish-dired-noselect-a
+              :before-until
+              (defun dd/dirvish-dired-noselect-on-lists (&rest args)
+		(and (listp (cadr args))
+                     (apply (car args) (cdr args)))))
   (bind-keys ("C-c f" . dirvish-fd)
              :map 'dirvish-mode-map
              ;; left click for expand/collapse dir or open file
