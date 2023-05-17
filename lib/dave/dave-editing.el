@@ -70,6 +70,7 @@
 
 ;; TODO: move to a sanity lib
 (use-package files
+  :defer 5
   :config
   (setq backup-directory-alist
 	`(("." . ,(concat user-emacs-directory "file-backups")))))
