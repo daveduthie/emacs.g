@@ -78,4 +78,7 @@
 (use-package autorevert
   :hook (fundamental-mode . auto-revert-mode))
 
+;; Allow narrowing to region
+(put 'narrow-to-region 'disabled nil)
+
 (provide 'dave-editing)
