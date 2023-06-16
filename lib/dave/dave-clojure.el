@@ -46,6 +46,18 @@
   (interactive)
   (cider-nrepl-sync-request:eval "(portal.api/close)"))
 
+;;;; Sync deps
+
+;; (apply #'concat "[ "
+;;        (append
+;; 	(mapcar (lambda (x) (concat ":" x " ")) '("a" "b" "c"))
+;; 	'("]"))
+;; 	)
+
+(defun dd/sync-deps ()
+  (interactive)
+  (cider-nrepl-sync-request:eval "((requiring-resolve 'clojure.repl.deps/sync-deps))"))
+
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p o") #'portal.api/open)
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p c") #'portal.api/clear)
 
