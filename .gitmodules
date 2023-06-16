@@ -46,6 +46,12 @@
 [submodule "consult"]
 	path = lib/consult
 	url = git@github.com:minad/consult.git
+[submodule "consult-eglot"]
+	path = lib/consult-eglot
+	url = https://github.com/mohkale/consult-eglot
+[submodule "csv-mode"]
+	path = lib/csv-mode
+	url = git@github.com:emacsmirror/csv-mode.git
 [submodule "dash"]
 	no-byte-compile = dash-functional.el
 	no-makeinfo = dash-template.texi
