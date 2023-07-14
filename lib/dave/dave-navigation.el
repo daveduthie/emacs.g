@@ -11,6 +11,12 @@
   (setq eglot-connect-timeout 60)
   (setq eglot-sync-connect 0))
 
+(use-package dumb-jump
+  :defer 1
+  :config
+  (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
+  (setq xref-show-definitions-function #'xref-show-definitions-completing-read))
+
 (use-package project
   :defer 3
   :config
