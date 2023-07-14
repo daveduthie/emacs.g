@@ -32,7 +32,8 @@
   (evil-define-key 'normal 'global (kbd "<SPC> s p") 'consult-ripgrep)
   (evil-define-key 'normal 'global (kbd "<SPC> s l") 'consult-line)
   (evil-define-key 'normal 'global (kbd ", e") 'consult-flymake)
-  (evil-define-key 'normal 'global (kbd ", i") 'consult-imenu))
+  (evil-define-key 'normal 'global (kbd ", i") 'consult-imenu)
+  (evil-define-key 'normal 'global (kbd "C-x r b") 'consult-bookmark))
 
 (use-package embark
   :defer t
