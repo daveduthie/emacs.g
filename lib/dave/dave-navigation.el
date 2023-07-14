@@ -3,7 +3,7 @@
   :init (recentf-mode 1))
 
 (use-package eglot
-  :hook ((clojure-mode rust-mode) . eglot-ensure)
+  :hook ((clojure-mode rust-mode terraform-mode) . eglot-ensure)
   :config
   (evil-define-key 'normal 'global (kbd ",a") 'eglot-code-actions)
   (evil-define-key 'normal 'global (kbd ",r") 'eglot-rename)
