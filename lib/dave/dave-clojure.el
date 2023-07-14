@@ -48,15 +48,16 @@
 
 ;;;; Sync deps
 
-;; (apply #'concat "[ "
-;;        (append
-;; 	(mapcar (lambda (x) (concat ":" x " ")) '("a" "b" "c"))
-;; 	'("]"))
-;; 	)
+(defun dd/sync-deps-aliases (aliases)
+  (apply #'concat
+	 "[ "
+	 (append (mapcar (lambda (x) (concat ":" x " ")) (split-string aliases " "))
+		 '("]"))))
 
-(defun dd/sync-deps ()
-  (interactive)
-  (cider-nrepl-sync-request:eval "((requiring-resolve 'clojure.repl.deps/sync-deps))"))
+(defun dd/sync-deps (&optional aliases)
+  (interactive (list (completing-read "Aliases: " nil)))
+  (cider-nrepl-sync-request:eval
+   (format "((requiring-resolve 'clojure.repl.deps/sync-deps) %s)" (dd/sync-deps-aliases aliases))))
 
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p o") #'portal.api/open)
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p c") #'portal.api/clear)
