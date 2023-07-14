@@ -42,5 +42,4 @@ codespell-fix:
 endif
 
 update-drones:
-	# git submodule update --recursive --remote --rebase --jobs=20
-	git submodule foreach "git checkout main || git checkout master && git pull"
+	git submodule update --init --rebase --remote --recursive --jobs=20
