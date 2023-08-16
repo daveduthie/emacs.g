@@ -84,6 +84,9 @@
 [submodule "edit-indirect"]
 	path = lib/edit-indirect
 	url = git@github.com:Fanael/edit-indirect.git
+[submodule "eldoc-box"]
+	path = lib/eldoc-box
+	url = https://github.com/casouri/eldoc-box
 [submodule "emacsql"]
 	no-byte-compile = emacsql-pg.el
 	path = lib/emacsql
@@ -200,6 +203,9 @@
 [submodule "queue"]
 	path = lib/queue
 	url = git@github.com:emacsmirror/queue.git
+[submodule "rainbow-mode"]
+	path = lib/rainbow-mode
+	url = git@github.com:emacsmirror/rainbow-mode.git
 [submodule "reformatter"]
 	path = lib/reformatter
 	url = git@github.com:purcell/emacs-reformatter.git

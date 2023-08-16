@@ -108,4 +108,8 @@ SCHEDULED: %T"
   :defer 5
   :config (global-org-modern-mode 1))
 
+(defun dd/org-update-agenda-files ()
+  (interactive)
+  (call-process "orgagenda"))
+
 (provide 'dave-org)

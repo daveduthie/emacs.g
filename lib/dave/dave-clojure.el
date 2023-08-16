@@ -56,10 +56,13 @@
 
 (defun dd/sync-deps (&optional aliases)
   (interactive (list (completing-read "Aliases: " nil)))
-  (cider-nrepl-sync-request:eval
-   (format "((requiring-resolve 'clojure.repl.deps/sync-deps) %s)" (dd/sync-deps-aliases aliases))))
+  (message
+   (cider-nrepl-sync-request:eval
+    (format "((requiring-resolve 'clojure.repl.deps/sync-deps) %s)"
+	    (dd/sync-deps-aliases aliases)))))
 
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p o") #'portal.api/open)
 (evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p c") #'portal.api/clear)
+(evil-define-key 'normal 'clojure-mode-map (kbd "<SPC> t p q") #'portal.api/close)
 
 (provide 'dave-clojure)
