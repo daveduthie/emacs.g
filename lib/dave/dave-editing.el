@@ -82,4 +82,7 @@
 ;; Allow narrowing to region
 (put 'narrow-to-region 'disabled nil)
 
+(use-package iedit
+  :bind (("C-;". iedit-mode)))
+
 (provide 'dave-editing)
