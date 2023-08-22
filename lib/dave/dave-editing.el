@@ -17,6 +17,9 @@
   ;; :config (electric-indent-mode -1)
   )
 
+(use-package electric-pair
+  :hook ((rustic-mode terraform-mode) . electric-pair-mode))
+
 (use-package company
   :hook (prog-mode . company-mode))
 
