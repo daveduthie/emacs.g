@@ -9,4 +9,7 @@
 (use-package display-line-numbers
   :hook prog-mode)
 
+;; (use-package pixel-scroll
+;;   :init (pixel-scroll-precision-mode t))
+
 (provide 'dave-ui)
