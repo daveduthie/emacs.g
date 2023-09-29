@@ -9,7 +9,8 @@
   (evil-define-key 'normal 'global (kbd ",r") 'eglot-rename)
   (setq eglot-confirm-server-initiated-edits nil)
   (setq eglot-connect-timeout 60)
-  (setq eglot-sync-connect 0))
+  (setq eglot-sync-connect 0)
+  (setq eglot-autoshutdown t))
 
 (use-package dumb-jump
   :defer 1
