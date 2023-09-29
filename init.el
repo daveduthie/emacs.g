@@ -74,7 +74,7 @@
 (progn                                  ; Load personal customizations
   (add-to-list 'load-path (expand-file-name "lib/dave" borg-user-emacs-directory))
   (require 'dave-mac)
-  (provide 'dave-system)
+  (require 'dave-system)
   (require 'dave-editing)
   (require 'dave-navigation)
   (require 'dave-clojure)
