@@ -84,9 +84,6 @@
 [submodule "edit-indirect"]
 	path = lib/edit-indirect
 	url = git@github.com:Fanael/edit-indirect.git
-[submodule "eldoc-box"]
-	path = lib/eldoc-box
-	url = https://github.com/casouri/eldoc-box
 [submodule "emacsql"]
 	no-byte-compile = emacsql-pg.el
 	path = lib/emacsql
