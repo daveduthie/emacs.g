@@ -83,7 +83,8 @@
   (require 'dave-rust)
   (require 'dave-org)
   (require 'dave-markdown)
-  (require 'dave-ui))
+  (require 'dave-ui)
+  (require 'dave-tools))
 
 ;;; Long tail
 
