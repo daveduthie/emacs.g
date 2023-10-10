@@ -31,6 +31,9 @@
 [submodule "clojure-mode"]
 	path = lib/clojure-mode
 	url = git@github.com:clojure-emacs/clojure-mode.git
+[submodule "clojure-ts-mode"]
+	path = lib/clojure-ts-mode
+	url = https://github.com/clojure-emacs/clojure-ts-mode
 [submodule "closql"]
 	path = lib/closql
 	url = git@github.com:magit/closql.git
